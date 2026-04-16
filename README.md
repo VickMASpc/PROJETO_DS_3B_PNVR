@@ -5,6 +5,6 @@
 ## Integrantes
 
 - Victor Monteiro
-- Rodrigo Raiumundo
+- Rodrigo Raimundo
 - Phelipe Eduardo
 - Nicollas Cavalcanti
