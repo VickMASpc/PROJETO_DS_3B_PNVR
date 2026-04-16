@@ -7,4 +7,4 @@
 - Victor Monteiro
 - Rodrigo Raiumundo
 - Phelipe Eduardo
-- Nicolas Cavalcanti
+- Nicollas Cavalcanti
