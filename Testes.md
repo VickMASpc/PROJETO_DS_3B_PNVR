@@ -18,6 +18,7 @@ CREATE TABLE usuarios (
 );
 
 INSERT INTO usuarios (usuario, senha) VALUES ('admin', 'admin123');
+```
 
 ## Testes
 
