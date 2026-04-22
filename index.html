@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--VM- Container-->
-    <!--VM- O container vai centralizar a caixa de login, tem borda e espaçamento entre os itens-->
     <div class="container">
-        <!--VM- Caixa de login-->
-        <!--VM- Aqui, fiz uma caixa de login simples, com campos para um usuário e uma senha em formulário com um botão pra "entrar"-->
         <div class="caixa-login">
             <h2>Login</h2>
-            <form>
+            <!--Conectando com o login.php-->
+            <form id="login-form" action="login.php" method="post">
                 <div class="input">
-                    <input type="text" required>
+                    <!--name="usuario" -> nome da coluna na tabela usuarios-->
+                    <input type="text" id="username" name="usuario" required>
                     <label>Usuário</label>
                 </div>
                 <div class="input">
-                    <input type="password" required>
+                    <!--name="senha" -> nome da coluna na tabela usuarios-->
+                    <input type="password" id="password" name="senha" required>
                     <label>Senha</label>
                 </div>
                 <button type="submit">Entrar</button>
