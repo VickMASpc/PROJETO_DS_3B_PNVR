@@ -1,5 +1,3 @@
-<!--VM- Readme básico-->
-
 # Projeto de Desenvolvimento de Sistemas
 
 ## Integrantes

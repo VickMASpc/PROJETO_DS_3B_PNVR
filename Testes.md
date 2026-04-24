@@ -17,7 +17,7 @@ CREATE TABLE usuarios (
     senha VARCHAR(255) NOT NULL
 );
 
-INSERT INTO usuarios (usuario, senha) VALUES ('admin', 'admin123');
+INSERT INTO usuarios (usuario, senha) VALUES ('admin', '$2y$10$7VgPTfakoRyRq5sKeIs7kOw4ofu3g71NVm70xtJ6LieW6XejEcAzi');
 ```
 
 ## Testes
@@ -25,9 +25,10 @@ INSERT INTO usuarios (usuario, senha) VALUES ('admin', 'admin123');
 - http://localhost/phpmyadmin/ (para verificar o banco de dados)
 - http://localhost/projeto-login/index.html (para testar o login)
 
-* dashboard.php não implementado
-
 ## Usuário teste:
 
 - Usuário: admin
 - Senha: admin123
+
+<!--VM- Razão da remoção-->
+* dashboard.php é fora de escopo para o projeto (como dito no PDF da professora).

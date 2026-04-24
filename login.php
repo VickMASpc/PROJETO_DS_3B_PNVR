@@ -1,5 +1,4 @@
 <?php
-//logica de login
 session_start();
 include('config.php');
 
@@ -17,16 +16,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($row = $result->fetch_assoc()) {
-        if ($senha === $row['senha']) {
+        //VM- Razão da senha criptografada: Era uma implementação muito simples.
+        if (password_verify($senha, $row['senha'])) {
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['username'] = $usuario;
-            header("Location: dashboard.php");
+            //VM- O material pedia mensagens como essa, por isso a remoção do dashboard.
+            echo "Usuário logado com sucesso!";
             exit();
         } else {
-            echo "Invalid password.";
+            echo "Senha inválida.";
         }
     } else {
-        echo "User not found.";
+        echo "Usuário não encontrado.";
     }
 }
 ?>

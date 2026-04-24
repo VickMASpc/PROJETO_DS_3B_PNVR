@@ -9,22 +9,29 @@
 </head>
 
 <body>
+    <header>
+        <p>Projeto desenvolvimento de sistemas 3°B</p>
+        <p>Tela de login</p>
+        <p>Integrantes: Victor Monteiro, Rodrigo Raimundo, Phelipe Eduardo, Nicollas Cavalcanti, Roberto Junior</p>
+        <p>2026</p>
+    </header>
+
     <div class="container">
         <div class="caixa-login">
             <h2>Login</h2>
-            <!--Conectando com o login.php-->
+            <!--VM- Conectando com o login.php-->
             <form id="login-form" action="login.php" method="post">
                 <div class="input">
-                    <!--name="usuario" -> nome da coluna na tabela usuarios-->
+                    <!--VM- name="usuario" -> nome da coluna na tabela usuarios-->
                     <input type="text" id="username" name="usuario" required>
                     <label>Usuário</label>
                 </div>
                 <div class="input">
-                    <!--name="senha" -> nome da coluna na tabela usuarios-->
+                    <!--VM- name="senha" -> nome da coluna na tabela usuarios-->
                     <input type="password" id="password" name="senha" required>
                     <label>Senha</label>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit" class="btn-logar">Entrar</button>
             </form>
         </div>
     </div>

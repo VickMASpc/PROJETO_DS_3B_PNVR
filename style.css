@@ -1,14 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* VM- Caixa centralizada*/
 .container {
-    border: 1px solid;
-    border-radius: 5px;
-    width: 50%;
     padding: 10px;
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
+}
+
+/* VM- Botão de login azul*/
+.btn-logar {
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+/* VM- Efeito de zoom no botão*/
+.btn-logar:hover {
+    transform: scale(1.025);
+    transition: 0.7s;
+}
+
+/* VM- Posição dos campos de input*/
+.input {
+    position: relative;
+    margin: 15px 0;
+}
+
+/* VM- Campo de input com uma linha, fundo transparente e sem borda*/
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #084684;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+}
+
+/* VM- O texto fica no campo de input por padrão*/
+.input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #084684;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* VM- Aplica a animação para subir e diminuir o texto quando digitar*/
+.input input:focus~label,
+.input input:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #084684;
+}
+
+/* VM- Caixa estilizada*/
+.caixa-login {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+}
+
+/* VM- Cabeçalho arredondado com fonte*/
+header {
+    background-color: #595d5f;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    color: white;
+}
+
+/* VM- Texto do header*/
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
 }
